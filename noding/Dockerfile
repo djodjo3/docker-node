@@ -2,7 +2,9 @@ FROM ubuntu:14.04
 
 MAINTAINER Claude-Arnaud PERROT "claude-arnaud.perrot@prestashop.com"
 
-RUN apt-get update -qq && apt-get install -qqy nodejs npm git
+RUN apt-get update -qq && \
+    apt-get install -qqy nodejs npm git && \
+    rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /root/.ssh
 
