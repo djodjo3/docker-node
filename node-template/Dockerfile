@@ -8,6 +8,6 @@ RUN cd /opt/node-sample/ && npm install
 
 EXPOSE 8080
 
-CMD ["node", "/opt/node-sample/index.js"]
+CMD ["/usr/bin/nodejs", "/opt/node-sample/index.js"]
 
 
